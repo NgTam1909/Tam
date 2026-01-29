@@ -1,0 +1,212 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Căn giữa form */
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+/* Khung login */
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+/* Header */
+.login-header {
+    background-color: #ff6b35;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.login-header h1 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+/* Form */
+.login-form {
+    padding: 35px 30px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+}
+/* Input */
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff6b35;
+    font-size: 18px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fcfcfc;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #ff6b35;
+    background-color: #fff;
+}
+/* Toggle password */
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* Remember + forgot */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.remember-log {
+    display: flex;
+    align-items: center;
+}
+
+.remember-log input {
+    margin-right: 8px;
+    accent-color: #ff6b35;
+}
+
+.forgot-password {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Đăng nhập */
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #ff6b35;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #e55a2b;
+}
+
+/* Đăng ký */
+.signup-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+.signup-link a {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+/* Footer */
+.login-footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+    border-top: 1px solid #eee;
+    background-color: #fcfcfc;
+}
+/* Responsive */
+@media (max-width: 480px) {
+    .login-header h1 {
+        font-size: 24px;
+    }
+
+    .login-form {
+        padding: 25px 20px;
+    }
+
+    .remember-forgot {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .forgot-password {
+        margin-top: 10px;
+    }
+}
+/* Thông báo lỗi */
+.error {
+    color: #ff3860;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.form-control.error-border {
+    border-color: #ff3860;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: none;
+}
